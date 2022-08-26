@@ -1,0 +1,212 @@
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 300;
+  src: local("Open Sans Light"), url("../fonts/OpenSans-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Open Sans Regular"), url("../fonts/OpenSans-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  src: local("Open Sans SemiBold"), url("../fonts/OpenSans-SemiBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: bold;
+  src: local("Open Sans Bold"), url("../fonts/OpenSans-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Nothing";
+  font-style: normal;
+  font-weight: 300;
+  src: local("Open Sans Regular"), url("../fonts/NothingYouCouldDo-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Teko";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Teko"), url("../fonts/Teko-Regular.ttf") format("truetype");
+}
+:root {
+  --white: #ffffff;
+  --black: #000000;
+  --black-hover: #111111;
+  --black-active: #222222;
+  --black-10: #0000001a;
+  --black-75: #000000bf;
+  --dark-0: #333333;
+  --dark-1: #000000bf;
+  --gray: #79756c;
+  --gray-0: #707070;
+  --gray-1: #7e7e7e;
+  --gray-2: #9a9a99;
+  --gray-3: #cccccc;
+  --gray-4: #00000029;
+  --gray-5: #e5e3dfbf;
+  --gray-6: #f8f8f8;
+  --gray-7: #e5e3df;
+  --gray-8: #dddddd;
+  --gray-9: #999999;
+  --gray-10: #eeeeee;
+  --gray-11: #444444;
+  --gray-12: #e8e8e8;
+  --red: #e32119;
+  --red-hover: #e4423b;
+  --red-active: #c91d16;
+  --green: #00994d;
+  --green-hover: #00be60;
+  --green-active: #00773c;
+  --blue: #00a0e6;
+  --blue-hover: #1cabe9;
+  --blue-active: #199bd4;
+  --yellow: #ffc107;
+  --yellow-hover: #e0a800;
+  --yellow-active: #d39e00;
+  --space: 20px;
+  --success-color: #155724;
+  --success-bg: #d4edda;
+  --success-border: #c3e6cb;
+  --danger-color: #721c24;
+  --danger-bg: #f8d7da;
+  --danger-border: #f5c6cb;
+}
+
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
+
+div, article, aside, footer, header, main, nav, section, ul, ol, li, button, figure, picture, hr {
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+}
+
+a {
+  color: rgb(17, 17, 17);
+  text-decoration: none;
+  font-family: "Opens Sans" sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+a:hover {
+  background: rgba(255, 255, 255, 0.626);
+}
+
+#header {
+  min-width: 320px;
+  box-sizing: border-box;
+  height: 110px;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(253, 236, 2, 0.9607843137);
+}
+
+#logo {
+  width: 80px;
+  height: 100px;
+  margin: 5px 0 0 80px;
+  padding-right: 20px;
+  align-items: flex-start;
+  justify-content: center;
+  cursor: pointer;
+}
+
+#menu {
+  display: flex;
+  list-style: none;
+  gap: 0.5rem;
+}
+
+#menu a {
+  display: block;
+  padding: 0.5rem;
+}
+
+#btn-mobile {
+  display: none;
+}
+
+@media (max-width: 720px) {
+  #menu {
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 100px;
+    padding-top: 80px;
+    right: 0px;
+    background: rgba(253, 236, 2, 0.9607843137);
+    transition: 0.6s;
+    z-index: 1;
+    height: 0px;
+    visibility: hidden;
+    overflow-y: hidden;
+  }
+  #logo {
+    z-index: 2;
+  }
+  #nav.active #menu {
+    height: calc(100vh - 70px);
+    visibility: visible;
+    overflow-y: auto;
+  }
+  #menu a {
+    padding: 1rem 0;
+    margin: 0 1rem;
+    border-bottom: 2px solid #bbbbbb;
+  }
+  #btn-mobile {
+    display: flex;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    gap: 0.5rem;
+  }
+  #hamburger {
+    border-top: 2px solid;
+    width: 20px;
+    color: #121212;
+  }
+  #hamburger::after,
+#hamburger::before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: currentColor;
+    margin-top: 5px;
+    transition: 0.3s;
+    position: relative;
+  }
+  #nav.active #hamburger {
+    border-top-color: transparent;
+  }
+  #nav.active #hamburger::before {
+    transform: rotate(135deg);
+  }
+  #nav.active #hamburger::after {
+    transform: rotate(-135deg);
+    top: -7px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
