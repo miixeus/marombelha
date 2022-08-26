@@ -5,6 +5,7 @@ a {
   font-family: 'Opens Sans' sans-serif;
   text-transform: uppercase;
   font-weight: bold;
+
 }
 
 a:hover {
@@ -25,6 +26,7 @@ a:hover {
 #logo {
   width: 80px;
   height: 100px;
+  z-index: 2000;
   margin: 5px 0 0 80px;
   padding-right: 20px;
   align-items: flex-start;
@@ -54,24 +56,24 @@ a:hover {
     display: block;
     position: absolute;
     width: 100%;
-    top: 100px;
-    padding-top: 80px;
+    top: 70px;
+    padding-top: 100px;
     right: 0px;
     background: #fdec02f5;
     transition: 0.6s;
-    z-index: 1;
+    z-index: 1000;
     height: 0px;
     visibility: hidden;
     overflow-y: hidden;
   }
-  #logo {
-    z-index: 2;
-
+  #logo a  {
+    position: relative;
+    visibility: collapse;
   }
   #nav.active #menu {
-    height: calc(100vh - 70px);
+    height: calc(100vh - 110px);
     visibility: visible;
-    overflow-y: auto;
+    overflow-y: hidden;
   }
   #menu a {
     padding: 1rem 0;
