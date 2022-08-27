@@ -106,6 +106,7 @@ a {
 
 a:hover {
   background: rgba(255, 255, 255, 0.626);
+  border-radius: 5px;
 }
 
 #header {
@@ -117,13 +118,16 @@ a:hover {
   align-items: center;
   justify-content: space-between;
   background: rgba(253, 236, 2, 0.9607843137);
+  border-radius: 0 0 15px 15px;
 }
 
 #logo {
+  background-image: url(../images/Bee_finish.png);
+  background-repeat: no-repeat;
   width: 80px;
-  height: 100px;
-  z-index: 2000;
-  margin: 5px 0 0 80px;
+  height: 90px;
+  z-index: 2;
+  margin: 5px 0 0 20px;
   padding-right: 20px;
   align-items: flex-start;
   justify-content: center;
@@ -151,23 +155,26 @@ a:hover {
     position: absolute;
     width: 100%;
     top: 70px;
-    padding-top: 100px;
     right: 0px;
-    background: rgba(253, 236, 2, 0.9607843137);
+    background: #fdec02;
     transition: 0.6s;
-    z-index: 1000;
+    z-index: 1;
     height: 0px;
     visibility: hidden;
     overflow-y: hidden;
   }
   #logo a {
+    background-image: url(../images/Bee_finish.png);
     position: relative;
-    visibility: collapse;
+    padding-left: 150px;
   }
   #nav.active #menu {
     height: calc(100vh - 110px);
     visibility: visible;
     overflow-y: hidden;
+    display: block;
+    align-items: center;
+    justify-content: center;
   }
   #menu a {
     padding: 1rem 0;
