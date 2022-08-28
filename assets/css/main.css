@@ -105,7 +105,7 @@ a {
 }
 
 a:hover {
-  background: rgba(255, 255, 255, 0.626);
+  background: rgba(253, 255, 121, 0.626);
   border-radius: 5px;
 }
 
@@ -117,24 +117,25 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: rgba(253, 236, 2, 0.9607843137);
+  background: #ffffff;
   border-radius: 0 0 15px 15px;
 }
 
-#logo {
-  background-image: url(../images/Bee_finish.png);
+#logo img {
   background-repeat: no-repeat;
-  width: 80px;
+  position: relative;
+  border-radius: 20px;
+  width: 210px;
   height: 90px;
   z-index: 2;
-  margin: 5px 0 0 20px;
-  padding-right: 20px;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
   cursor: pointer;
+  box-shadow: 5px 5px 5px rgb(165, 165, 156);
 }
 
 #menu {
+  width: 100%;
   display: flex;
   list-style: none;
   gap: 0.5rem;
@@ -149,24 +150,23 @@ a:hover {
   display: none;
 }
 
-@media (max-width: 720px) {
+@media (max-width: 820px) {
   #menu {
     display: block;
     position: absolute;
     width: 100%;
-    top: 70px;
+    top: 110px;
     right: 0px;
-    background: #fdec02;
-    transition: 0.6s;
+    background: #ffffff;
+    transition: 0.8s;
     z-index: 1;
     height: 0px;
     visibility: hidden;
     overflow-y: hidden;
   }
   #logo a {
-    background-image: url(../images/Bee_finish.png);
+    background-image: url(../images/logo.png);
     position: relative;
-    padding-left: 150px;
   }
   #nav.active #menu {
     height: calc(100vh - 110px);
