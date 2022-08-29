@@ -76,13 +76,18 @@ a:hover {
     background-image: url(../images/logo.png);
     position: relative;   
   }
+
   #nav.active #menu {
     height: calc(100vh - 110px);
     visibility: visible;
+    border-radius: 20px 20px;
     overflow-y: hidden;
     display: block;
     align-items: center;
     justify-content: center;
+    #header {
+      border-radius: 0;
+    }
   }
   #menu a {
     padding: 1rem 0;
