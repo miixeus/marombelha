@@ -118,16 +118,14 @@ a:hover {
   align-items: center;
   justify-content: space-between;
   background: #ffffff;
-  border-radius: 0 0 15px 15px;
 }
 
 #logo img {
   background-repeat: no-repeat;
   position: relative;
   border-radius: 20px;
-  width: 210px;
+  width: 220px;
   height: 90px;
-  z-index: 2;
   align-items: center;
   justify-content: center;
   cursor: pointer;
@@ -159,7 +157,7 @@ a:hover {
     right: 0px;
     background: #ffffff;
     transition: 0.8s;
-    z-index: 1;
+    z-index: 1000;
     height: 0px;
     visibility: hidden;
     overflow-y: hidden;
@@ -171,7 +169,6 @@ a:hover {
   #nav.active #menu {
     height: calc(100vh - 110px);
     visibility: visible;
-    border-radius: 20px 20px;
     overflow-y: hidden;
     display: block;
     align-items: center;
@@ -222,14 +219,143 @@ a:hover {
   }
 }
 body {
-  background-image: url(../images/technological-honeycomb-black-and-golden-background/2754781.png);
+  /*background-image: url(../images/technological-honeycomb-black-and-golden-background/2754781.png);*/
   width: 100%;
   height: 100%;
   background-repeat: no-repeat;
 }
 
-.photo-carousel {
-  height: calc(100vh - 110px);
+.container {
+  width: 100%;
+  height: 4000px;
+  display: block;
+  margin: 20px;
+  padding: 2px;
 }
+
+.grid-title {
+  font-size: 28px;
+  text-transform: uppercase;
+  color: var(--yellow);
+  margin: 20px;
+  padding-bottom: 10px;
+  text-align: center;
+  border-bottom: 2px solid rgba(185, 185, 185, 0.733);
+}
+
+.subtitle {
+  font-size: 20px;
+  text-align: center;
+  margin: 20px 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid-item {
+  background-color: rgba(223, 223, 223, 0.352);
+  border-radius: 10px;
+  box-shadow: 5px rgba(234, 234, 234, 0.678);
+  margin: 20px;
+  padding-bottom: 20px;
+  display: block;
+  text-align: center;
+  border-bottom: 2px solid rgba(185, 185, 185, 0.733);
+}
+.grid-item p {
+  padding-bottom: 20px;
+}
+
+.video {
+  box-shadow: 2px 2px 2px 2px rgba(234, 234, 234, 0.678);
+}
+
+.carousel {
+  width: 100%;
+  height: 100%;
+}
+
+.carousel img {
+  width: 800px;
+  background-color: rgba(255, 255, 255, 0.527);
+}
+
+/*.style-text {
+    color: rgb(0, 0, 0);
+    position: absolute;
+    top: 400px;
+    left: 480px;
+    font-size: 17px;
+    padding: 5px 6px;
+    text-align: justify;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+}*/
+/*
+#slider {
+    margin: 0;
+    width: 800px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.slides {
+    width: 400px; 
+    height: 400px;
+    display: flex;
+
+}
+
+.slides input {
+    display: none;
+}
+
+.slide {
+    width: 100%;
+    position: relative;
+}
+
+.manual-navigation {
+    position:absolute;
+    width: 800px;
+    margin-top: 350px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn{
+    border: 2px solid #fff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:Last-child) {
+    margin-right: 40px;
+
+}
+
+.manual-btn:hover {
+    background-color: #fff;
+}
+
+#radio1:checked ~ .first {
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first {
+    margin-left: -25%;
+}
+
+#radio3:checked ~ .first {
+    margin-left: -50%;
+}
+
+#radio4:checked ~ .first {
+    margin-left: -75%;
+}
+*/
 
 /*# sourceMappingURL=main.css.map */

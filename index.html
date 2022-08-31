@@ -22,6 +22,8 @@
     <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png"/>
     <link rel="manifest" href="assets/images/manifest.json"/>
     <link rel="stylesheet" href="assets/css/main.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick-theme.css">
     <meta name="msapplication-TileColor" content="#ffffff"/>
     <meta name="msapplication-TileImage" content="assets/images/ms-icon-144x144.png"/>
     <meta name="theme-color" content="#ffffff"/>
@@ -30,52 +32,74 @@
     
     <header id="header">
           <a href="index.html" id="logo">
-            <img src="assets/images/logo.png" alt="Marombelha Terapias" style="width: 200px; height: 90px"/>
+            <img src="assets/images/logo.png" alt="Marombelha Terapias" style="width: 260px; height: 90px"/>
           </a>
         <nav id="nav">
           <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
             <span id="hamburger"></span>
           </button>
           <ul id="menu" role="menu">
-            <li><a href="/">Home</a></li>
-            <li><a href="/">Apiterapia</a></li>
-            <li><a href="/">Auriculoterapia</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#apiterapia">Apiterapia</a></li>
+            <li><a href="#2">Auriculoterapia</a></li>
             <li><a href="/">Depoimentos</a></li>
             <li><a href="/">Contato</a></li>
           </ul>
         </nav>
     </header>
       
-    <section class="background">
-      <div class="photo-carousel">
-        <div>
-          <h1>MAROMBELHA TERAPIAS</h1>
-        </div>
+    <section>
+      
+      <div class="carousel">
+            <!--Slide Images-->
+            <div>
+              <!--<div class="style-text"><h1>MAROMBELHA TERAPIAS</h1></div>-->
+              <img src="assets/images/slider1.png" alt="Imagem 1"/>
+            </div>
+            <div>
+              <img src="assets/images/slider2.png" alt="Imagem 2"/>
+            </div>
+            <div>
+              <img src="assets/images/slider3.png" alt="Imagem 3"/>
+            </div>
+            <div>
+              <img src="assets/images/slider4.png" alt="Imagem 4"/>
+            </div>
+            <!--Fim Slide Images-->
+          
+        
       </div>
     </section>
     <section >
-      <div class="photo-carousel">
-        <div>
-          <h2>Apiterapia</h2>
+      <div class="container">
+        <h1 class="grid-title">Marombelha Terapias</h1>
+        <div class="grid-item">
+          <div class="subtitle" id="apiterapia"><h2 >Apiterapia</h2></div>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+          <video src="assets/images/Apiterapia ganha adeptos.mp4" autoplay width="300" controls muted poster="assets/images/slider-3.jpg" class="video"></video>
+        </div>
+        <div class="grid-item">
+          <div class="subtitle" id="2"><h2>Auriculoterapia</h2></div>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
         </div>
       </div>
     </section>
     <section>
-      <div class="photo-carousel">
+      <div>
         <div>
-          <h2>Auriculoterapia</h2>
+          <h2>//</h2>
         </div>
       </div>
     </section>
     <section>
-      <div class="photo-carousel">
+      <div>
         <div>
           <h2>Depoimentos</h2>
         </div>
       </div>
     </section>
     <section>
-      <div class="photo-carousel">
+      <div>
         <div>
           <h2>Contato</h2>
         </div>
@@ -85,8 +109,11 @@
 
       
     </footer>
-      <script src="./script.js">
-      </script>
+    <script type="text/javascript" src="script.js"></script>
+    
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.js"></script>
     
 </body>
 </html>

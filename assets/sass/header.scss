@@ -22,24 +22,20 @@ a:hover {
   align-items: center;
   justify-content: space-between;
   background: #ffffff;
-  border-radius: 0 0 15px 15px;
-  
+ 
 }
 
 #logo img {
   background-repeat: no-repeat;
   position: relative;
   border-radius: 20px;
-  width: 210px;
+  width: 220px;
   height: 90px;
-  z-index: 2;
   align-items: center;
   justify-content: center;
   cursor: pointer;
   box-shadow: 5px 5px 5px rgb(165, 165, 156);
 }
-
-
 
 #menu {
   width: 100%;
@@ -67,7 +63,7 @@ a:hover {
     right: 0px;
     background: #ffffff;
     transition: 0.8s;
-    z-index: 1;
+    z-index: 1000;
     height: 0px;
     visibility: hidden;
     overflow-y: hidden;
@@ -80,7 +76,6 @@ a:hover {
   #nav.active #menu {
     height: calc(100vh - 110px);
     visibility: visible;
-    border-radius: 20px 20px;
     overflow-y: hidden;
     display: block;
     align-items: center;
