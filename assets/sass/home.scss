@@ -6,30 +6,39 @@ body {
 }
 
 .whatsapp {
-    width: 40px;
-    height: 40px;
+    border: none;
+    width: 80px;
+    height: 80px;
     position: fixed;
     z-index: 10000;
-    bottom: 40px;
-    right: 40px;
-    top: 600px;
-    left: 350px;
+    bottom: 20px;
+    right: 20px;
+    background-color: green;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: transparent;
+    background-image: linear-gradient(180deg,#00e574,#5eff2e);
+    border: 3px solid #77ffaf;
+    border-radius: 50% 50% 50% 50%;
+    padding: 20px;
+    box-shadow: 0 0 0 0 #00e574;
     a:hover {
-        background: none;
-        box-shadow: 2px 2px 2px rgb(79, 148, 0);
+        width: 80px;
+        height: 80px;
+        border: #00e574;
+        transition: 2s;
     }
 }
 
 .container-img {
+    background-color: rgba(255, 255, 255, 0.692);;
+    align-items: center;
+    justify-content: center;
     margin: 10px;
     width: 100%;
-    height: calc(100vh - 110px);
-    padding: 10px;
-    border-radius: 10px;
-    border: black solid;
-    .carousel:no-button {
-        
-    }
+
+
 }
 .container {
     width: 100%;
@@ -40,6 +49,7 @@ body {
 }
 
 .grid-title {
+    font-weight: 500;
     font-size: 28px;
     text-transform: uppercase;
     color: var(--yellow);
@@ -50,6 +60,8 @@ body {
 }
 
 .subtitle {
+    font-family: 'Roboto';
+    font-weight: 400;
     font-size: 20px;
     text-align: center;
     margin: 20px 10px;
@@ -60,7 +72,7 @@ body {
 
 }
 .grid-item {
-    background-color: rgba(245, 245, 245, 0.692);
+
     border-radius: 10px;
     margin: 20px;
     padding-bottom: 20px;
@@ -73,6 +85,7 @@ body {
 }
 
 .footer {
+    border-top: 6px solid black;
     background-color: var(--yellow);
     display: flex;
     flex-direction: column;
@@ -81,5 +94,25 @@ body {
     align-items: center;
     justify-content: space-between;
     opacity: 0.9;
+    h3 {
+        font-weight: bold;
+        font-size: 26px;
+        margin-top: 10px;
+    }
 }
 
+.bee {
+    width: 160px;
+    height: 120px;
+    transition: width 1s, height 1s;
+}
+.bee:hover {
+    width: 180px;
+    height: 140px;
+}
+
+.instagram:hover {
+    border: 1px solid white;
+    border-radius: 50%;
+
+}

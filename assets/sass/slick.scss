@@ -1,28 +1,90 @@
-
-.carousel {
+.container-img {
     margin: 0;
     width: 100%;
-    height: 100%;
-
-
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.carousel {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 400px;
     img {
         width: 100%;
         height: 400px;
-        opacity: 0.8;
-        
+        opacity: 0.8;  
+    }
+}
+.box-text{
+    z-index: 4;
+    top: 250px;
+    left: 50px;
+    position: absolute;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    transition: all 2s ease-in-out;
+    
+
+}
+.title-img {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    align-items: flex-end;
+    justify-content: flex-end;
+    font-size: 36px;
+    margin-bottom: 6px;
+    text-shadow: 2px 2px 4px #000000;
+    
+}
+.content-img {
+    color: white;
+    font-size: 26px;
+    text-shadow: 2px 2px 4px #000000;
+    margin-bottom: 15px;
+}
+.button-img {
+    color: white;
+    border: none;
+    font-size: 22px;
+    padding: 4px 8px;
+    border-radius: 4px;
+    background-color: var(--yellow);
+    margin-bottom: 6px;
+    text-decoration: none;
+    cursor: pointer;
+
+}
+.button-img:hover {
+    background-color: var(--yellow-hover);
+}
+
+@media(min-width:820px){
+    .container-img {
+        padding: 0;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        transition: 2s ease-in-out;
+    }
+
+    .box-text{
+        z-index: 4;
+        top: 150px;
+        right: 50px;
+        left: 850px;
+        position: absolute;
+        text-align: center;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        transition: all 3s ease-in-out;
+    
     }
 }
 
-/*.text-img {
-    position: absolute;
-    display: block;
-    text-align: center;
-    align-items: center;
-    justify-content: end;
-    font-weight: 600;
-    background-color: white;
-
-
-}*/
 
 

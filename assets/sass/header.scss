@@ -1,16 +1,17 @@
 
-a {
+#header a {
   color: rgb(17, 17, 17);
   text-decoration: none;
   font-family: 'Opens Sans' sans-serif;
   text-transform: uppercase;
-  font-weight: bold;
+  font-weight: bold;       
+  transition: all .3s ;
 
 }
 
-a:hover {
+#header a:hover {
   background: rgba(253, 255, 121, 0.626);
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 #header {
