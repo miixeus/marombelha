@@ -5,12 +5,12 @@ body {
 
 .whatsapp {
     border: none;
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: 70px;
     position: fixed;
     z-index: 10000;
-    bottom: 50px;
-    right: 30px;
+    bottom: 20px;
+    right: 10px;
     background-color: green;
     align-items: center;
     justify-content: center;
@@ -20,62 +20,111 @@ body {
     border: 3px solid #77ffaf;
     border-radius: 50% 50% 50% 50%;
     padding: 20px;
-    box-shadow: 0 0 0 0 #00e574;
-    a:hover {
-        width: 80px;
-        height: 80px;
-        border: #00e574;
-        transition: 2s;
-    }
+    box-shadow: 1px 1px 1px  #00e574;
+}
+.whatsapp:hover {
+    border: #b2f3d2;
+    transition: all 3s;
 }
 
-.container-img {
-    align-items: center;
-    justify-content: center;
-    margin: 10px;
+.container-p {
+    background-color: var(--yellow);
+    padding: 5px;
     width: 100%;
-
-
-}
-.container {
-    width: 100%;
-    height: 2000px;
     display: block;
     margin: 20px;
-    padding: 2px;
+    border-radius: 3px;
 }
-
-.grid-title {
-    font-weight: 500;
-    font-size: 28px;
-    text-transform: uppercase;
-    color: var(--yellow);
+.container-two {
+    background-color: rgb(253, 226, 203);
+    padding: 5px;
+    width: 100%;
+    display: block;
     margin: 20px;
-    padding-bottom: 10px;
-    text-align: center;
-    border-bottom: 1px solid rgb(232, 232, 232);
+    border-radius: 3px;
 }
 
 .subtitle {
-    font-family: 'Roboto';
+    color: rgb(26, 26, 26);
+    font-family: 'Open Sans';
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    margin: 20px 10px;
+    align-items: center;
+    justify-content: center;
+}
+.grid-item {
+    margin: 20px;
+    padding-bottom: 20px;
+    display: block;
+    text-align: center;
+    p {
+        padding-bottom: 20px;
+    }
+    .grid-one {
+        display: block;
+    }
+    .box-video {
+        align-items: center;
+        justify-content: center;
+    }
+}
+.grid-item-2 {
+    width: 100%;
+    margin: 20px;
+    background-color: var(--yellow);
+    border-radius: 3px;
+    padding-bottom: 20px;
+    display: block;
+    text-align: center;
+    border-bottom: 1px solid rgb(232, 232, 232);
+
+    p {
+        padding-bottom: 20px;
+    }
+}
+
+.container-three {
+    background-color: rgb(253, 226, 203);
+    padding: 5px;
+    width: 100%;
+    display: block;
+    border-radius: 3px;
+}
+
+.subtitle {
+    font-family: 'Open Sans';
     font-weight: 400;
     font-size: 20px;
     text-align: center;
     margin: 20px 10px;
     align-items: center;
     justify-content: center;
-    border: 1px 0 1px solid rgb(232, 232, 232);;
-
-
-
 }
 .grid-item {
-
-    border-radius: 10px;
     margin: 20px;
     padding-bottom: 20px;
     display: block;
     text-align: center;
+    p {
+        padding-bottom: 20px;
+    }
+    .grid-one {
+        display: block;
+    }
+    .box-video {
+        align-items: center;
+        justify-content: center;
+    }
+}
+.grid-item-2 {
+    width: 100%;
+    background-color: var(--yellow);
+    border-radius: 3px;
+    display: block;
+    text-align: center;
+    border-bottom: 1px solid rgb(232, 232, 232);
 
     p {
         padding-bottom: 20px;
@@ -85,12 +134,12 @@ body {
 .footer {
     border-top: 6px solid black;
     background-color: var(--yellow);
-    display: flex;
+    display: block;
     flex-direction: column;
     width: 100%;
-    height: 400px;
+    height: 350px;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     opacity: 0.9;
     h3 {
         font-weight: bold;
@@ -98,19 +147,62 @@ body {
         margin-top: 10px;
     }
 }
-
-.bee {
-    width: 160px;
-    height: 120px;
-    transition: width 1s, height 1s;
+.box-footer {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .bee {
+        width: 160px;
+        height: 120px;
+        transition: width 0.5s, height 1s;
+    }
+    .bee:hover {
+        width: 130px;
+        height: 120px;
+    }
+    .instagram {
+        margin: 15px;
+        width: 60px;
+        height: 60px;
+        transition: width 0.5s, height 1s;
+    }
+    .instagram:hover {
+        width: 40px;
+    }
 }
-.bee:hover {
-    width: 180px;
-    height: 140px;
-}
 
-.instagram:hover {
-    border: 1px solid white;
-    border-radius: 50%;
+
+@media(min-width: 1080px) {
+    .container-p {
+        margin-top: 25px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+    }
+    .grid-item {
+        width: 100%;
+        margin: 0;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        border-radius: none;
+        .grid-one {
+            width: 660px;
+            padding-right: 20px;
+            height: 240px;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            border-right: 1px solid black;
+        }
+        .box-video {
+            width: 400px;
+            height: 340px;
+            align-items: center;
+            justify-content: center;
+        }
+    }
 
 }
