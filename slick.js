@@ -3,8 +3,9 @@ $('.carousel').slick({
   slidesToScroll: 1,
   dots: true,
   infinite: true,
-  speed: 500,
+  speed: 600,
   fade: true,
-  autoplay: false,
-  autoplaySpeed: 2000,
+  autoplay: true,
+  autoplaySpeed: 5000,
+  button: false,
 });
