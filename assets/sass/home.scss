@@ -26,7 +26,17 @@ body {
     border: #b2f3d2;
     transition: all 3s;
 }
+@media(min-width: 320px) {
 
+    .container-p {
+        background-color: var(--yellow);
+        padding: 5px;
+        width: 100%;
+        display: block;
+        margin: 20px;
+        border-radius: 3px;
+    }
+}
 .container-p {
     background-color: var(--yellow);
     padding: 5px;
@@ -93,14 +103,22 @@ body {
     border-radius: 3px;
 }
 
-.subtitle {
+#witnesses {
     font-family: 'Open Sans';
-    font-weight: 400;
-    font-size: 20px;
+    font-weight: 600;
+    font-size: 30px;
     text-align: center;
     margin: 20px 10px;
     align-items: center;
     justify-content: center;
+}
+.box-video-w {
+    align-items: center;
+    justify-content: center;
+    video {
+        width: 80%;
+        height: 300px;
+    }
 }
 .grid-item {
     margin: 20px;
