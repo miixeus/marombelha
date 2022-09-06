@@ -3,6 +3,9 @@ body {
     height: 100%;
 }
 
+svg {
+    color: #6b6b6b8b;
+}
 .whatsapp {
     border: none;
     width: 70px;
@@ -15,12 +18,11 @@ body {
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    background-color: transparent;
     background-image: linear-gradient(180deg,#00e574,#5eff2e);
     border: 3px solid #77ffaf;
-    border-radius: 50% 50% 50% 50%;
     padding: 20px;
     box-shadow: 1px 1px 1px  #00e574;
+    
 }
 .whatsapp:hover {
     border: #b2f3d2;
@@ -41,7 +43,8 @@ body {
     background-color: var(--yellow);
     padding: 5px;
     width: 100%;
-    display: block;
+    display: flex;
+    flex-direction: column-reverse;
     margin: 20px;
     border-radius: 3px;
 }
@@ -58,7 +61,7 @@ body {
     color: rgb(26, 26, 26);
     font-family: 'Open Sans';
     font-weight: bold;
-    font-size: 30px;
+    font-size: 26px;
     text-align: center;
     margin: 20px 10px;
     align-items: center;
