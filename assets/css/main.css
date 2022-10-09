@@ -98,7 +98,7 @@
   --blue-active: #199bd4;
   --yellow: #ffc107;
   --yellow-hover: #e0a800;
-  --yellow-active: #d39e00;
+  --yellow-active: #e9af00;
   --space: 20px;
   --success-color: #155724;
   --success-bg: #d4edda;
@@ -160,9 +160,18 @@ a {
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  box-shadow: 5px 5px 5px rgb(165, 165, 156);
+  box-shadow: 8px 8px 5px rgb(165, 165, 156);
+  animation: fadein 3s;
 }
 
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 #menu {
   width: 100%;
   display: flex;
@@ -422,7 +431,7 @@ svg {
 
 .footer {
   border-top: 6px solid black;
-  background-color: var(--yellow);
+  background-color: var(--yellow-active);
   display: block;
   flex-direction: column;
   width: 100%;
