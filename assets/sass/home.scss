@@ -45,7 +45,9 @@ svg {
         box-shadow: 0 0 0 0 transparent
     }
 }
-
+.video {
+    border-radius: 6px;
+}
 @media(min-width: 320px) {
 
     .container-p {
@@ -98,11 +100,15 @@ svg {
         display: block;
     }
     .box-video {
+        width: 100%;
+        height: 400px;
         align-items: center;
         justify-content: center;
-        video {
+        img {
+            width: 360px;
+            height: 400px;
             border-radius: 3px;
-            box-shadow: 2px 1px 10px rgb(0, 0, 0);
+            box-shadow: 2px 1px 10px rgba(73, 73, 73, 0.884);
         }
     }
 }
@@ -114,7 +120,6 @@ svg {
     padding-bottom: 20px;
     display: block;
     text-align: center;
-    border-bottom: 1px solid rgb(232, 232, 232);
     box-shadow: 1px 1px 10px rgb(168, 168, 168);
     video {
         border-radius: 3px;
@@ -172,8 +177,6 @@ svg {
     border-radius: 3px;
     display: block;
     text-align: center;
-    border-bottom: 1px solid rgb(232, 232, 232);
-
     p {
         padding-bottom: 20px;
     }
@@ -251,7 +254,7 @@ svg {
             flex-direction: column;
             align-items: center;
             justify-content: space-between;
-            border-right: 1px solid black;
+            
         }
         .box-video {
             width: 400px;
