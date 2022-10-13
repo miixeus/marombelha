@@ -498,8 +498,8 @@ svg {
   .container-p {
     margin: 25px;
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    flex-direction: row;
+    align-items: center;
   }
   .container-two {
     background-color: rgb(253, 226, 203);
@@ -511,26 +511,25 @@ svg {
   }
   .grid-item {
     width: 100%;
+    aspect-ratio: 16/9;
     margin: 0;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     border-radius: none;
   }
   .grid-item .grid-one {
-    width: 660px;
-    padding-right: 20px;
-    height: 240px;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
+    width: 100%;
   }
   .grid-item .box-video {
-    width: 400px;
-    height: 340px;
+    width: 100%;
     align-items: center;
     justify-content: center;
+  }
+  .grid-item p {
+    width: 100%;
+    display: flex;
   }
 }
 .container-img {
