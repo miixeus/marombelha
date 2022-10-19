@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="description" content="Conheça a Marombelha Terapias Alternativas"/>
     <title>Marombelha Terapias</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lemonada:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/svg+xml" href="assets/images/Bee_finish.png"/>
     <link rel="alternate icon" href="assets/images/favicon.ico"/>
     <link rel="apple-touch-icon" sizes="57x57" href="assets/images/apple-icon-57x57.png"/>
@@ -32,7 +35,7 @@
     
     <header id="header">
           <a href="index.html" id="logo">
-            <img src="assets/images/logo.png" alt="Marombelha Terapias" style="width: 260px; height: 90px"/>
+            <img src="assets/images/logo-sem-fundo (1).png" alt="Marombelha Terapias" style="width: 260px; height: 90px"/>
           </a>
         <nav id="nav">
           <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
@@ -68,7 +71,7 @@
       <div class="whatsapp">
         <a href="https://api.whatsapp.com/send?phone=5519988365263&text=Olá,%20estou%20interessado%20em%20saber%20mais%20informações%20sobre%20as%20terapias."
         target="_blank"
-        style="position:fixed;bottom:8px;right:12px;"><img src="assets/images/whatsapp.png" alt="botão whatsapp" width="40px" height="40px">
+        style="position:fixed;bottom:8px;right:12px;"><img src="assets/images/whatsapp.png" alt="botão whatsapp" width="40px" height="40px"/>
         </a>
         
       </div>
@@ -78,10 +81,10 @@
         <div class="grid-item">
           <div class="grid-one">
             <div class="subtitle">
-              <h2 id="apiterapia">Marombelha - Quem somos</h2>
+              <h2 id="apiterapia"><span>Marombelha</span> - Quem somos</h2>
               </div>
             <div class="box-video">
-              <video width="100%" height="100%" controls autoplay muted poster="assets/images/foto-profis/2.jpeg" class="video">
+              <video width="80%" height="80%" controls autoplay muted poster="assets/images/foto-profis/2.jpeg" class="video">
                 <source src="assets/images/foto-profis/Marombelha.mp4"/>
               </video>
             
@@ -100,6 +103,10 @@
     <section >
       <div class="container-p">
         <div class="grid-item">
+          <div class="box-video">
+            <img src="assets/images/foto-profis/7.jpeg" alt="Tratamento de Apiterapia" width="400px" height="480px"/>
+          
+          </div>
           <div class="grid-one">
             <div class="subtitle">
             <h2 id="apiterapia">Apiterapia</h2>
@@ -109,10 +116,7 @@
              
             </div>
           </div>
-            <div class="box-video">
-              <img src="assets/images/foto-profis/7.jpeg" alt="Tratamento de Apiterapia" width="400px" height="330px"/>
             
-            </div>
           
         </div>
         
@@ -122,6 +126,21 @@
 
       <div class="container-two">
         <div class="grid-item">
+          <div class="grid-container">
+            <div class="grid-photos hexagono">
+              <img src="assets/images/foto-profis/1.jpeg" alt="">
+            </div>
+            <div class="grid-photos hexagono">
+              <img src="assets/images/foto-profis/2.jpeg" alt="">
+            </div>
+              <div class="grid-photos hexagono">
+              <img src="assets/images/foto-profis/3.jpeg" alt="">
+            </div>
+              <div class="grid-photos hexagono">
+              <img src="assets/images/foto-profis/9.jpeg" alt="">
+            </div>
+            </div>
+          </div>
           <div class="grid-one">
             <div class="subtitle">
             <h2 id="auriculoterapia">Auriculoterapia</h2>
@@ -130,9 +149,7 @@
               <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
             </div>
           </div>
-            <div class="box-video">
-              <video src="assets/images/Apiterapia ganha adeptos.mp4" width="300" controls muted poster="assets/images/slider-4.jpg" class="video"></video>
-            </div>
+           
           
         </div>
         
@@ -172,11 +189,19 @@
           <p>&copy;2022 | by mixeus. All Rights Reserved.</p>
       
       </div>
-      
+
+      <svg width="414px" height="462" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="400" height="420" fill="#F5F5F5"/>
+      <clipPath id="hexagono">
+        <path d="M239.742 458.039C231.086 462.474 220.818 462.438 212.194 457.942L16.1576 355.751C6.20938 350.565 -0.0140598 340.262 0.0253099 329.043L0.718339 131.56C0.757709 120.341 7.0533 110.082 17.0377 104.966L213.786 4.15311C222.442 -0.281907 232.71 -0.245879 241.334 4.24978L437.37 106.441C447.318 111.627 453.542 121.93 453.502 133.149L452.809 330.632C452.77 341.851 446.474 352.11 436.49 357.226L239.742 458.039Z" fill="#0A0703" fill-opacity="0.09"/>
+      </clipPath>
+        </svg>
+        
     </footer>
 
     <!--Start JavaScript-->
     <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="carrousel.js"></script>
     
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>

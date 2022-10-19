@@ -69,3 +69,38 @@
     font-style: normal;
     font-weight: 900;
 }
+
+@font-face {
+    font-family: 'Lemonada' cursive;
+    src: local("Lemonada Bold"), url("../fonts/Lemonada/static/Lemonada-Bold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Lemonada' cursive;
+    src: local("Lemonada Light"), url("../fonts/Lemonada/static/Lemonada-Light.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Lemonada' cursive;
+    src: local("Lemonada Medium"), url("../fonts/Lemonada/static/Lemonada-Medium.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Lemonada' cursive;
+    src: local("Lemonada Regular"), url("../fonts/Lemonada/static/Lemonada-Regular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Lemonada' cursive;
+    src: local("Lemonada SemiBold"), url("../fonts/Lemonada/static/Lemonada-SemiBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 600;
+}

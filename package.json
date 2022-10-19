@@ -4,12 +4,15 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-      "sass": "sass --watch assets/sass/main.scss:assets/css/main.css"
+        "sass": "sass --watch assets/sass/main.scss:assets/css/main.css"
     },
     "keywords": [],
     "author": "",
     "license": "ISC",
     "devDependencies": {
-      "sass": "^1.26.10"
+        "sass": "^1.26.10"
+    },
+    "dependencies": {
+        "@splidejs/splide": "^4.1.3"
     }
-  }
+}
